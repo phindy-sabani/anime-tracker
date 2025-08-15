@@ -14,7 +14,7 @@ Personal tool to track anime series with customizable themes and filtering optio
 - Canvas API
 
 ## Live Demo
-[View on Netlify]()
+[View on Netlify](https://anime-tracker-phindile.netlify.app/)
 
 
 ## How to Use
