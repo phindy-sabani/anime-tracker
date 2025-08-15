@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Anime Tracker</title>
+        <link href="/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+
+    <body>
+        <canvas id="background-canvas"></canvas>
+        <header>
+            <h1>My Anime Tracker</h1>
+            <nav>
+                <button data-status="All">All</button>
+                <button data-status="Watching">Currently Watching</button>
+                <button data-status="Completed">Completed</button>
+                <button data-status="Plan to Watch">Plan to Watch</button>
+            </nav>
+
+            <section id="theme-form">
+                <h2>Pick a theme that best matches your mood</h2>
+                <label for="themePicker">Theme:</label>
+                <select id="themePicker">
+                    <option value="default">Purple (Default)</option>
+                    <option value="light">Light Mode</option>
+                    <option value="dark">Dark Mode</option>
+                    <option value="sakura">Sakura</option>
+                </select>
+            </section>
+        </header>
+
+        <section id="add-anime-form">
+            <h2>Add a New Anime</h2>
+            <input type="text" id="anime-title" placeholder="Anime Title">
+            <input type="text" id="anime-image" placeholder="Image URL">
+            <select id="anime-status">
+                <option value="Watching">Currently Watching</option>
+                <option value="Completed">Completed</option>
+                <option value="Plan to Watch">Plan to Watch</option>
+            </select>
+            <button id="add-btn">Add Anime</button>
+        </section>
+        <main id="anime-list">
+    
+        </main>
+
+        <script src="/script.js"></script>
+    </body>
+</html>
